@@ -162,7 +162,34 @@ Order Now
 </div>
 
 </section>
+<script>
 
+function searchProduct(){
+
+let input=document.getElementById("search").value.toUpperCase();
+
+let products=document.querySelectorAll(".product");
+
+products.forEach(function(item){
+
+let txt=item.innerText.toUpperCase();
+
+if(txt.indexOf(input)>-1){
+
+item.style.display="block";
+
+}else{
+
+item.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+  
 </body>
 
 </html>
