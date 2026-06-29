@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>VELNOX Admin</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="admin-login">
+
+<h1 style="color:gold;">VELNOX ADMIN</h1>
+
+<input
+type="text"
+id="user"
+placeholder="Username">
+
+<input
+type="password"
+id="pass"
+placeholder="Password">
+
+<button class="btn" onclick="login()">
+
+LOGIN
+
+</button>
+
+</section>
+
+<script>
+
+function login(){
+
+let u=document.getElementById("user").value;
+
+let p=document.getElementById("pass").value;
+
+if(u=="REHAN" && p=="REHAN123"){
+
+location.href="dashboard.html";
+
+}
+
+else{
+
+alert("Wrong Username or Password");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
