@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Sweet Box",
+    "price": 299,
+    "category": "Sweets",
+    "stock": 100
+  },
+  {
+    "id": 2,
+    "name": "Luxury Chocolate",
+    "price": 199,
+    "category": "Chocolate",
+    "stock": 100
+  },
+  {
+    "id": 3,
+    "name": "Dry Fruit Box",
+    "price": 499,
+    "category": "Dry Fruits",
+    "stock": 50
+  },
+  {
+    "id": 4,
+    "name": "Gift Pack",
+    "price": 699,
+    "category": "Gift",
+    "stock": 25
+  }
+]
