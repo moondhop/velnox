@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>VELNOX Order</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+VELNOX
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+</nav>
+
+</header>
+
+<section class="order-page">
+
+<h1 style="margin-top:140px;text-align:center;color:gold;">
+
+PLACE YOUR ORDER
+
+</h1>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="phone" placeholder="Mobile Number" required>
+
+<input type="text" id="village" placeholder="Village">
+
+<input type="text" id="city" placeholder="City">
+
+<input type="text" id="district" placeholder="District">
+
+<input type="text" id="state" placeholder="State">
+
+<input type="number" id="pincode" placeholder="Pincode">
+
+<select id="product">
+
+<option>Premium Sweet Box</option>
+
+<option>Luxury Chocolate</option>
+
+<option>Dry Fruit Box</option>
+
+<option>Gift Pack</option>
+
+</select>
+
+<input type="number" id="qty" placeholder="Quantity">
+
+<select id="payment">
+
+<option>Cash On Delivery</option>
+
+<option>UPI</option>
+
+<option>Bank Transfer</option>
+
+</select>
+
+<button type="submit" class="btn">
+
+Confirm Order
+
+</button>
+
+</form>
+
+</section>
+
+<script>
+
+document.getElementById("orderForm").onsubmit=function(e){
+
+e.preventDefault();
+
+let msg=`*VELNOX NEW ORDER*%0A%0A`;
+
+msg+=`Name: ${name.value}%0A`;
+
+msg+=`Phone: ${phone.value}%0A`;
+
+msg+=`Village: ${village.value}%0A`;
+
+msg+=`City: ${city.value}%0A`;
+
+msg+=`District: ${district.value}%0A`;
+
+msg+=`State: ${state.value}%0A`;
+
+msg+=`Pincode: ${pincode.value}%0A`;
+
+msg+=`Product: ${product.value}%0A`;
+
+msg+=`Quantity: ${qty.value}%0A`;
+
+msg+=`Payment: ${payment.value}`;
+
+window.open("https://wa.me/917217299458?text="+msg,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
